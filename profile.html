@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENI - MEMORY - Connexion</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style-profile.css">
+    <script src="jquery.flip.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="assets/scripts/login-script.js"></script>
+    <script src="assets/scripts/script-profile.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ENI - <b>MEMORY</b> - Profil</h1>
+        <nav>
+            <div class="container">
+                <ul class="navbar-nav">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                    <li><a href="login.html">Se connecter</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="play.html">Jouer</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="profile">
+            <div class="user-profile">
+                <h2>Profil</h2>
+                <img src="assets\question.svg" alt="avatar de profil">
+            </div>
+            
+            <div class="name">
+                <p>Nom d'utilisateur</p>
+                <p id="repeat-name"></p>
+                <hr>
+            </div>
+            <div class="email">
+                <p>Email</p>
+                <p id="repeat-email"></p>
+                <hr>
+            </div>
+            <div class="memory-choice">
+                <p>Choix du Memory</p>
+                <select name="memory" id="memory">
+                    <option id="letters" value="alphabet-scrabble">Lettres</option>
+                    <option id="animals" value="animaux">Animaux</option>
+                    <option id="animated-animals" value="animaux-animes">Animaux animés</option>
+                    <option id="domestic-animals" value="animaux-domestiques">Animaux domestiques</option>
+                    <option id="dogs" value="chiens">Chiens</option>
+                    <option id="dinos" value="dinosaures">Dinosaures</option>
+                    <option id="dinos-with-names" value="dinosaures-avec-nom">Dinosaures avec leur nom</option>
+                    <option id="vegetables" value="memory-legume" selected>Légumes</option>
+                </select>
+            </div>
+            <div class="render-memory">
+                <img src="assets\images\memory-legume\memory_detail.png" alt="test">
+                <!-- images correspondante au select  -->
+            </div>
+
+            <div class="memory-grid">
+                <p>Taille du Memory</p>
+                <select name="memory-size" id="memory-size">
+                <option value="4x3" selected>4 * 3</option>
+                <option value="3x3">3 * 3</option>
+                </select>
+            </div>
+            <div class="button">
+                <input type="submit" id= "submit" value="Enregistrer option">
+            </div>
+            <div id="display-option"></div>
+            </div>
+    </div>
+    </main>
+    <footer></footer>
+    </html>

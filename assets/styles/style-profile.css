@@ -1,0 +1,102 @@
+/* style-login.css */
+main {
+    display: flex;
+    justify-content: center;
+}
+hr {
+    margin: 0;
+    border: 1px solid wheat;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    height: auto;
+    border-radius: 15px;
+    border : 2px solid wheat;
+    padding: 15px;
+    background-color: rgb(58, 57, 57);
+    color: wheat;
+    width: 50%; 
+    /* ^ penser à changer ça sur les autres pages */
+    align-items: center;
+}
+
+#repeat-email, #repeat-name {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+.user-profile img {
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid wheat;
+    -webkit-filter : sepia(100%)
+}
+
+.name, .email, .memory-choice, .memory-grid {
+    margin-top: 10px;
+    align-self:flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+select {
+    background-color: wheat;
+    color: rgb(58, 57, 57);
+}
+
+.render-memory img {
+    width: 20vw;
+}
+
+.memory-choice p, .memory-grid p {
+    padding-bottom: 10px;
+}
+#name,#email {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: rgb(58, 57, 57);
+    border: none;
+    color: wheat;
+}
+
+
+.button {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-around;
+}
+
+
+.button input {
+    width: 10rem;
+    height: 40px;
+    background-color: wheat;
+    color: rgb(58, 57, 57);
+    border-radius: 5px;
+    border-style: none;
+}
+
+
+.button input:hover {
+    background-color: rgb(104, 4, 70);
+    color: wheat;
+}
+
+
+#display-option {
+    height: 1rem;
+}
+footer {
+    height: 3rem;
+}

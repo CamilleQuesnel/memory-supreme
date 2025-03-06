@@ -1,0 +1,136 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    font-size: 1.1rem;
+}
+
+body {
+    background: linear-gradient(145deg, rgba(83,0,130,1) 0%, rgba(11,153,91,1) 50%, rgba(124,246,137,1) 100%);
+    min-height: 100vh;
+}
+
+h1 {
+    color: wheat;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(58, 57, 57);
+    letter-spacing: 5px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 3px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    align-self: flex-start;
+    background-color: rgb(58, 57, 57);
+    color: wheat;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(58, 57, 57);
+    color: wheat;
+    width: 30rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-nav li {
+    display: inline-block; 
+    border: 1px solid wheat;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+
+.navbar-nav li a {
+    color: wheat;
+    padding: 0 10px;
+    line-height: 20px; 
+    display: inline-block;
+    height: 100%;
+}
+.container li {
+    
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+.container li:hover {
+    border: 1px solid wheat;
+    background-color: rgb(104, 4, 70);
+    color: wheat;
+}
+
+.container li a {
+    color: wheat;
+    padding: 10px;
+}
+
+.container a:visited {
+    color : wheat;
+}
+
+.container a:hover {
+    color: rgb(58, 57, 57);
+}
+
+.nav-item {
+    display: inline;
+    color: wheat;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.rules {
+    margin-top: 3vh;
+    border-radius: 15px;
+    border : 2px solid wheat;
+    padding: 15px;
+    background-color: rgb(58, 57, 57);
+    color: wheat;
+}
+
+.rules img {
+    display: flex;
+    padding: 0.75rem;
+    position: relative;
+    margin: auto;
+    width: 45vh;
+}
+
+.rules p {
+    margin-bottom: 0;
+}
+
+footer {
+    height: 3rem;
+}

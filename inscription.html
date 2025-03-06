@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENI - MEMORY - Inscription</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style-inscription.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="assets/scripts/script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>ENI - <b>MEMORY</b> - Inscription</h1>
+        <nav>
+            <div class="container">
+                <ul class="navbar-nav">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                    <li><a href="login.html">Se connecter</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="play.html">Jouer</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+ 
+    <main>
+        
+        <div class="inscription">
+            <div class="legend-inscription">
+                <h2>Inscrivez-vous :</h2>
+            </div>
+            <fieldset>
+                <form action="" method="GET">
+                    <!-- Récupération du nom  -->
+                    <div class="name">
+                        <label for="name">Nom* :</label>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        autofocus 
+                        required 
+                        placeholder="Saisissez votre nom (3 caractères minimum)" 
+                        title="Saisissez votre nom (3 caractères minimum)"
+                        pattern="[A-Za-z]{3,}">
+                        <hr>
+                            <p id="name-alert"></p>
+
+                    </div>
+                    <!-- Email  -->
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="Saisissez votre adresse mail"
+                        title="Saisissez votre adresse mail">
+                        <hr>
+                            <p id="email-alert"></p>
+
+                    </div>
+                    <!-- Mot de passe  -->
+                    <div class="pwd">
+                        <label for="mdp">Mot de passe</label>
+                        <input
+                        type="password"
+                        name="mdp"
+                        id="mdp"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{6,}$"
+                        title="Saisissez votre mot de passe">
+                        <hr>
+                        <p>Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</p>
+                        <div class="pwd-security-test">
+                            <div id="security-color">
+                                <div id="red-color"></div>
+                                <div id="yellow-color"></div>
+                                <div id="green-color"></div>
+                            </div>
+                            <div id="security-text">
+                                <div id="low-text">Faible</div>
+                                <div id="medium-text">Moyen</div>
+                                <div id="hight-text">Fort</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Confirmation du mot de passe  -->
+                    <div class="confirm-pwd">
+                    <label for="confirmMdp">Confirmez votre mot de passe</label>
+                    <input
+                    type="password"
+                    name="confirmMdp"
+                    id="confirmMdp"
+                    title="Confirmez la saisie de votre mot de passe">
+                    <hr>
+                    </div>
+                    <!-- Boutons  -->
+                    <div class="button">
+                    <input type="submit" id= "submit" value="Création du compte">
+                    <input type="reset" id="reset" value="Annuler">
+                </div>
+                </form>
+            </fieldset>
+            
+        </div>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>

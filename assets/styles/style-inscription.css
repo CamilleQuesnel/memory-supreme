@@ -1,0 +1,165 @@
+/* style-inscription.css */
+main {
+    display: flex;
+    justify-content: center;
+}
+hr {
+    margin: 0;
+    border: 1px solid wheat;
+}
+
+.inscription {
+    margin-top: 3vh;
+    height: auto;
+    border-radius: 15px;
+    border : 2px solid wheat;
+    padding: 15px;
+    background-color: rgb(58, 57, 57);
+    color: wheat;
+    width: 30rem;
+}
+
+.inscription input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: rgb(58, 57, 57);
+    border: none;
+    color: wheat;
+    outline: none;
+}
+input::placeholder {
+    font-size: 1rem;
+}
+
+.legend-inscription {
+    text-align: center;
+    height: 3rem;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+    font-size: 1.1rem;
+}
+
+.name, .email, .pwd, .confirm-pwd {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.pwd p, .name p, .email p {
+    font-size: 0.80rem;
+    margin-bottom: 15px;
+}
+
+/* gestion de l'affichage de la div password */
+/* <div class="pwd-security-test">
+<div id="security-color">
+    <div id="red-color"></div>
+    <div id="yellow-color"></div>
+    <div id="green-color"></div>
+</div>
+<div id="security-text"></div>
+</div> */
+
+
+#red-color {
+    display: flex;
+    display: inline-block;
+    width: 5rem;
+    height: 5px;
+    background-color: red;
+    text-align: center;
+
+}
+
+#security-color, #security-text {
+    visibility: hidden;
+}
+
+#yellow-color {
+    display: flex;
+    display: inline-block;
+    width: 5rem;
+    height: 5px;
+    text-align: center;
+    background-color: orange;
+
+    
+}
+
+
+#green-color {
+    display: flex;
+    display: inline-block;
+    width: 5rem;
+    height: 5px;
+    text-align: center;
+    background-color: green;
+    
+}
+#security-text {
+display: flex;
+width: 50%;
+justify-content: space-around;
+
+}
+#low-color {
+    flex: 1;
+    display: inline-block;
+
+    background-color: red;
+    text-align: center;
+    
+}
+
+
+#medium-color {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    background-color: orange;
+
+    
+}
+
+
+#hight-color {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    background-color: green;
+    
+}
+
+
+
+
+/* gestion des boutons  */
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+
+#submit:disabled {
+background-color: black;
+}
+
+#submit, #reset {
+    width: 10rem;
+    height: 40px;
+    background-color: wheat;
+    color: rgb(58, 57, 57);
+    border-radius: 5px;
+}
+
+#submit:hover, #reset:hover {
+    background-color: rgb(104, 4, 70);
+    color: wheat;
+}
+
+footer {
+    height: 3rem;
+}
