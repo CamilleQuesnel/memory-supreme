@@ -141,7 +141,7 @@ main {
     padding: 0.75rem;
     position: relative;
     margin: auto;
-    width: 45vw;
+    width: 50%;
     
 }
 
@@ -178,6 +178,12 @@ footer {
     transition: left 0.5s ease;
   }
   
+  .rules img {
+
+    width: 45vw;
+    
+}
+
   /* smart-nav menu links */
   .smart-nav a {
     padding: 8px 8px 8px 32px;
