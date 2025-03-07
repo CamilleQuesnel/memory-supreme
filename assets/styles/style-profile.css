@@ -23,7 +23,8 @@ h2 {
     padding: 15px;
     background-color: rgb(58, 57, 57);
     color: wheat;
-    width: 50%; 
+    width: 60%; 
+    max-width: 600px;
     /* ^ penser à changer ça sur les autres pages */
     align-items: center;
 }
@@ -100,3 +101,17 @@ select {
 footer {
     height: 3rem;
 }
+
+/******************************
+     AFFICHAGE SMARTPHONE
+******************************/
+
+@media screen and (max-width: 768px) {
+    .profile {
+        width: 80%;
+    }
+    
+    .render-memory img {
+        width: 45vw;
+    }
+    }

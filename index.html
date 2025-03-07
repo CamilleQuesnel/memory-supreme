@@ -8,9 +8,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="assets/scripts/nav.js" defer></script>
 </head>
 <body>
     <header>
+                <!-- affichage nav pour smartphone -->
+                <div id="smart-nav" class="smart-nav">
+                    <a id="closeBtn" href="#" class="close">X</a>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="inscription.html">S'inscrire</a></li>
+                        <li><a href="login.html">Se connecter</a></li>
+                        <li><a href="profile.html">Profil</a></li>
+                        <li><a href="play.html">Jouer</a></li>
+                    </ul>
+                  </div>
+                  
+                  <a href="#" id="openBtn">
+                    <span class="burger-icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </a>
+                
+                  <!-- fin nav pour smartphone  -->
         <h1>ENI - <b>MEMORY</b> - Accueil</h1>
         <nav>
             <div class="container">
@@ -23,6 +45,8 @@
                 </ul>
             </div>
         </nav>
+
+
     </header>
     <main>
         <div class="rules">

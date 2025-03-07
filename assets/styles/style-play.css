@@ -110,3 +110,14 @@ main {
     width: 6rem;
     height: 6rem;
 }
+
+/******************************
+     AFFICHAGE SMARTPHONE
+******************************/
+
+@media screen and (max-width: 768px) {
+    .play {
+        width: 80%;
+    }
+    
+    }

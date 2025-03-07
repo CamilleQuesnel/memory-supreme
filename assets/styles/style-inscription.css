@@ -16,7 +16,8 @@ hr {
     padding: 15px;
     background-color: rgb(58, 57, 57);
     color: wheat;
-    width: 30rem;
+    width: 60%;
+    max-width: 600px;
 }
 
 .inscription input {
@@ -162,4 +163,17 @@ background-color: black;
 
 footer {
     height: 3rem;
+}
+
+
+
+/******************************
+     AFFICHAGE SMARTPHONE
+******************************/
+
+@media screen and (max-width: 768px) {
+.inscription {
+    width: 80%;
+}
+
 }
