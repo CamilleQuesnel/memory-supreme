@@ -84,5 +84,15 @@ footer {
     .login {
         width: 80%;
     }
-    
+    .login input {
+        width: 100%;
+    }
+
+    #reset {
+        width: 5rem;
+    }
+
+    #submit {
+        width: 7rem;
+    }
     }

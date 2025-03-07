@@ -18,6 +18,7 @@ hr {
     color: wheat;
     width: 60%;
     max-width: 600px;
+    
 }
 
 .inscription input {
@@ -55,15 +56,7 @@ fieldset {
     margin-bottom: 15px;
 }
 
-/* gestion de l'affichage de la div password */
-/* <div class="pwd-security-test">
-<div id="security-color">
-    <div id="red-color"></div>
-    <div id="yellow-color"></div>
-    <div id="green-color"></div>
-</div>
-<div id="security-text"></div>
-</div> */
+
 
 
 #red-color {
@@ -175,5 +168,26 @@ footer {
 .inscription {
     width: 80%;
 }
+.inscription input {
+    width: 100%;
+}
+hr {
+    width: 100%;
+}
 
+p {
+    padding-right: 5px;
+    margin-right: 10%;
+}
+
+#reset {
+    width: 5rem;
+    height: 3rem;
+}
+
+#submit {
+    width: 10rem;
+    height: 3rem;
+    
+}
 }
